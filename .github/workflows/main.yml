@@ -5,5 +5,5 @@ on:
     branches: [main]
 
 jobs:
-  usar-template:
+  scan-dojo:
     uses: gastonbarbaccia/global_actions_demo/.github/workflows/dojo.yml@main
