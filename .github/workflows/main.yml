@@ -6,6 +6,7 @@ on:
 
 permissions:
   actions: read
+  security-events: write
 
 jobs:
   scan-dojo:
