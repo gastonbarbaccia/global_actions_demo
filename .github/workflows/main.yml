@@ -6,7 +6,7 @@ on:
 
 jobs:
   scan-dojo:
-    uses: gastonbarbaccia/global_actions_demo/.github/workflows/dojo.yml@main
+    uses: gastonbarbaccia/global_actions/.github/workflows/dojo.yml@main
     with:
       DEFECTDOJO_PRODUCT_NAME: "global_actions_demo"
       DEFECTDOJO_PRODUCTID: "1"
