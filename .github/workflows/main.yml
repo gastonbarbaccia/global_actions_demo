@@ -19,6 +19,7 @@ jobs:
 
   codeql_create_engagement:
     name: Create engagement in DefectDojo - CodeQL
+    needs: codeql_analysis
     runs-on: ubuntu-latest
     env:
       DEFECTDOJO_URL: "http://35.173.243.96:8080"
@@ -33,7 +34,7 @@ jobs:
       DEFECTDOJO_ENGAGEMENT_API_TEST: "true"
       DEFECTDOJO_ENGAGEMENT_PEN_TEST: "true"
       DEFECTDOJO_ENGAGEMENT_CHECK_LIST: "true"
-      DEFECTDOJO_PRODUCTID: 1
+      DEFECTDOJO_PRODUCTID: "1"
 
     steps:
       - name: Checkout repository
@@ -88,3 +89,4 @@ jobs:
         with:
           name: defectdojo1-env
           path: defectdojo1.env
+
