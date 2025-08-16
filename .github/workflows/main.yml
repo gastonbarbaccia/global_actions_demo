@@ -19,7 +19,6 @@ jobs:
 
   codeql_create_engagement:
     name: Create engagement in DefectDojo - CodeQL
-    needs: codeql_analysis
     runs-on: ubuntu-latest
     env:
       DEFECTDOJO_URL: "http://35.173.243.96:8080"
