@@ -9,7 +9,6 @@ permissions:
   actions: read
   contents: read
 
-
 jobs:
   scan-dojo:
     uses: gastonbarbaccia/global_actions/.github/workflows/dojo.yml@main
