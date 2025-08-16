@@ -1,0 +1,9 @@
+name: Template Call
+ 
+on:
+  push:
+    branches: [main]
+
+jobs:
+  usar-template:
+    uses: gastonbarbaccia/global_actions_demo/.github/workflows/dojo.yml@main
